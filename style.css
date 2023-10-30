@@ -1,0 +1,174 @@
+/* use ColorPicker to choose the precise color that is similar to the sample image */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.outer {
+  flex: 50%;
+}
+.outer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.left {
+  padding-left: 1%;
+}
+.right {
+  padding-right: 1%;
+}
+.main-img {
+  width: 100%;
+}
+.side-img {
+  width: 100%;
+}
+.icon {
+  width: 2%;
+}
+.center-text {
+  text-align: center;
+}
+.technical-info {
+  color: #9b9fa2;
+  background-color: #f8f9fb;
+  border: 1px solid #eeeef0;
+  /* round the corners */
+  border-radius: 5px;
+}
+
+.price {
+  font-size: xx-large;
+  gap: 0px;
+}
+.promotion {
+  /* round the corners */
+  border-radius: 5px;
+  gap: 0%;
+  display: flex;
+  flex-direction: column;
+}
+.basic-promotion {
+  border: 1px solid #eeeef0;
+  background-color: #f8f9fb;
+}
+.extra-promotion {
+  border: 1px solid #eeeef0;
+  font-weight: bold;
+  background-color: #f8f9fb;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  position: relative;
+  bottom: 20px;
+}
+.extra-promotion-tittle {
+  background-color: #e8ecef;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+}
+.extra-promotion-list {
+  position: relative;
+  bottom: 20px;
+}
+.button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+.red {
+  width: 100%;
+  background-color: #cb1c21;
+  margin-bottom: 1%;
+}
+.blue {
+  background-color: #3815d5;
+  width: 100%;
+}
+.small-btn {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 1%;
+}
+ul {
+  list-style: none;
+  padding-left: 1%;
+  font-weight: normal;
+} /* Remove default bullets */
+
+li::before {
+  content: "✅"; /* Unicode bullet symbol */
+  padding-right: 1%;
+}
+
+table,
+td {
+  border: 1px solid #e1e2e7;
+  border-collapse: collapse;
+}
+/* Cell padding */
+th,
+td {
+  padding: 2%;
+}
+
+.odd {
+  background-color: #e8ecef;
+  padding-left: 5%;
+}
+
+.special-link:after {
+  content: " ➤";
+}
+/* make the links' color stay the same after visited */
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+/* change color of radio buttons to red */
+.radio {
+  accent-color: red;
+}
+
+button > h1 {
+  margin: 2px;
+  font-weight: normal;
+}
+button > span {
+  margin-bottom: 2px;
+}
+.special-cell {
+  border-bottom: hidden;
+  border-right: hidden;
+  border-left: hidden;
+}
+
+/* Làm sao để viết tắt đoạn này? Thay vì viết từng border top, bottom, left, right, etc */
+.VND-price-tag {
+  text-decoration: underline;
+}
